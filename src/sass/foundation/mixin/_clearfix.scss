@@ -1,0 +1,16 @@
+//
+// Mixin clearfix
+// clearfix mixin
+// ```
+// .example {
+//   @include clearfix();
+// }
+// ```
+
+@mixin clearfix() {
+  &:after {
+    content:"";
+    display: block;
+    clear:both;
+  }
+}

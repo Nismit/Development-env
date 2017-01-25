@@ -1,0 +1,22 @@
+//
+// Color Variables
+// _color.scss defines variables for colors
+//
+
+$_color-text: #333 !default;
+$_color-text-invert: invert($_color-text);
+$_color-bg: #fff !default;
+$_color-bg-invert: invert($_color-bg);
+
+// Link Color
+$_color-link: #2b70ba !default;
+$_color-link--visited: null !default;
+$_color-link--hover: lighten($_color-link, 15%) !default;
+
+// SNS Color
+$_color-twitter: #1da1f2 !default;
+$_color-facebook: #3b5998 !default;
+$_color-github: #4078c0 !default;
+$_color-linkedin: #0077b5 !default;
+$_color-pinterest: #bd081c !default;
+$_color-spotify: #1db954 !default;

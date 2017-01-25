@@ -1,0 +1,50 @@
+//
+// Utility Text
+//
+
+.u-text {
+  // Text align
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  // Text vertical align 
+  &-top {
+    vertical-align: top;
+  }
+
+  &-middle {
+    vertical-align: middle;
+  }
+
+  &-bottom {
+    vertical-align: bottom;
+  }
+
+  // Text color
+  // Color based on $_color-text
+  &-color-invert {
+    color: $_color-text-invert;
+  }
+
+  &-color-white {
+    color: #fff;
+  }
+
+  &-color-black {
+    color: #333;
+  }
+
+  // Text size
+  &-extra-small {
+    font-size: 60%;
+  }
+}

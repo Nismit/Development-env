@@ -1,0 +1,35 @@
+///
+// Mixin media query
+//
+// Get media query mixin
+// @see /foundation/variable/_breakpoints.scss
+//
+// ```
+// @include getMediaQueryMin('.example', 'md') {
+//   width: 100px;
+// }
+//
+// // output
+// @media screen and (min-width: 64em) {
+//   .example {
+//     width: 100px;
+//   }
+// }
+// ```
+
+@mixin getMediaQueryMin($class, $suffix, $bp: $_breakpoints-map) {
+  @media screen and (min-width: em-calc(map-get($bp, $suffix))) {
+    #{$class} {
+      @content;
+    }
+  }
+}
+
+@mixin getMediaQueryMax($class, $suffix, $bp: $_breakpoints-map) {
+  @media screen and (max-width: em-calc(map-get($bp, $suffix))) {
+    #{$class} {
+      @content;
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+//
+// Breakpoints Variables
+// _breakpoints.scss defines variables for media query.
+//
+
+$_breakpoints-map: (
+  xs: 640,
+  sm: 768,
+  md: 1024,
+  lg: 1200
+) !default;
+

@@ -1,0 +1,45 @@
+//
+// Utility Margin
+//
+
+// Margin-top
+.u-mt {
+  @for $i from 1 through 10 {
+    &-#{$i * 5} {
+      margin-top: ($i * 5) * 1px;
+    }
+  }  
+}
+
+// Margin-right
+.u-mr {
+  @for $i from 1 through 10 {
+    &-#{$i * 5} {
+      margin-right: ($i * 5) * 1px;
+    }
+  }
+}
+
+// Margin-bottom
+.u-mb {
+  @for $i from 1 through 10 {
+    &-#{$i * 5} {
+      margin-bottom: ($i * 5) * 1px;
+    }
+  }
+}
+
+// Margin-left
+.u-ml {
+  @for $i from 1 through 10 {
+    &-#{$i * 5} {
+      margin-left: ($i * 5) * 1px;
+    }
+  }
+}
+
+// Margin-left/right Auto
+.u-m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

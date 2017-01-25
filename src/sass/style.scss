@@ -1,0 +1,52 @@
+//
+// style.scss will be output style.css (compressed)
+// It includes all of scss files, so partial files should import in this file..
+//
+
+@charset "utf-8";
+
+// Variables
+@import 'foundation/variable/_breakpoints';
+@import 'foundation/variable/_color';
+@import 'foundation/variable/_easing';
+@import 'foundation/variable/_font';
+@import 'foundation/variable/_others';
+
+// Function for Sass
+@import 'foundation/function/_em-calc';
+@import 'foundation/function/_strip-unit';
+
+// Mixins
+@import 'foundation/mixin/_clearfix';
+@import 'foundation/mixin/_flex';
+@import 'foundation/mixin/_font-size';
+@import 'foundation/mixin/_mediaquery';
+
+// Above files are defined for SASS before import initial files
+
+// Reset Style (You can choose reset or normalize, but default is normalize)
+//@import 'foundation/base/_reset';
+@import 'foundation/base/_normalize';
+
+// Inital Website Settings
+@import 'foundation/base/_init';
+
+// Utility
+@import 'foundation/utility/_keyframes';
+@import 'foundation/utility/_bg-color';
+@import 'foundation/utility/_display';
+@import 'foundation/utility/_float';
+@import 'foundation/utility/_margin';
+@import 'foundation/utility/_padding';
+@import 'foundation/utility/_text';
+
+// Mixins for a particular site
+@import 'mixin/_example';
+
+// Layout
+@import 'layout/_header';
+@import 'layout/_section';
+@import 'layout/_footer';
+
+// Modules
+@import 'module/_example';

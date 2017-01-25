@@ -1,0 +1,16 @@
+//
+// Function strip-unit
+// returns number without unit(s).
+//
+// # Usage
+//
+// ```
+// .example {
+//   width: (100 - strip-unit(16px))px;
+//   // output -> (100 - 16)px
+// }
+// ```
+
+@function strip-unit($n) {
+  @return $n / ($n * 0 + 1);
+}

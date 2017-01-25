@@ -1,0 +1,22 @@
+//
+// Utility Display
+//
+
+.u-display {
+  &-none {
+    display: none;
+  }
+
+  &-block {
+    display: block;
+  }
+
+  &-inline {
+    display: inline;
+  }
+
+  &-inline-block {
+    display: inline-block;
+  }
+}
+
