@@ -1,0 +1,140 @@
+//
+// Variables
+// All variables should be refered from this file
+//
+
+
+
+
+
+//
+// Breakpoints Variables
+// _breakpoints.scss defines variables for media query.
+//
+
+$_breakpoints-map: (
+  xs: 640,
+  sm: 768,
+  md: 1024,
+  lg: 1200
+) !default;
+
+
+
+
+
+//
+// Color Variables
+//
+
+$_color-text: #333 !default;
+$_color-text-invert: invert($_color-text);
+$_color-bg: #fff !default;
+$_color-bg-invert: invert($_color-bg);
+
+// Link Color
+$_color-link: #2b70ba !default;
+$_color-link--visited: null !default;
+$_color-link--hover: lighten($_color-link, 15%) !default;
+
+// SNS Color
+$_color-twitter: #1da1f2 !default;
+$_color-facebook: #3b5998 !default;
+$_color-github: #4078c0 !default;
+$_color-linkedin: #0077b5 !default;
+$_color-pinterest: #bd081c !default;
+$_color-spotify: #1db954 !default;
+
+
+
+
+
+//
+// Font Variables
+//
+
+// Font size Variables
+$_font-base-size: 16 !default;
+
+
+//
+// Font-Family Variables
+//
+
+// Twitter Bootstrap
+$_font-family_tw: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+// Foundation
+$_font-family_fd: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+
+// Custom (e.g Google Fonts)
+$_font-family_custom: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+
+
+// Font weight Variable
+$_font-weight: 400 !default;
+
+// Font line-height Variable
+$_font-line-height: 150% !default;
+
+
+
+
+
+//
+// Other Variables
+//
+// This file defines variables except for colors and fonts.
+// Naming convention: $_filename
+//
+
+// Link variable
+$_other-link-default: none !default;
+$_other-link-hover: underline !default;
+
+// Box sizing
+$_other-box-sizing: border-box !default;
+
+
+
+
+
+//
+// Easing Variables
+//
+
+$_linear: cubic-bezier( 0.250, 0.250, 0.750, 0.750 ) !default;
+$_ease: cubic-bezier( 0.250, 0.100, 0.250, 1.000 ) !default;
+
+// ease
+$_ease-in: cubic-bezier( 0.420, 0.000, 1.000, 1.000 ) !default;
+$_ease-in-quad: cubic-bezier( 0.550, 0.085, 0.680, 0.530 ) !default;
+$_ease-in-cubic: cubic-bezier( 0.550, 0.055, 0.675, 0.190 ) !default;
+$_ease-in-quart: cubic-bezier( 0.895, 0.030, 0.685, 0.220 ) !default;
+$_ease-in-quint: cubic-bezier( 0.755, 0.050, 0.855, 0.060 ) !default;
+$_ease-in-sine: cubic-bezier( 0.470, 0.000, 0.745, 0.715 ) !default;
+$_ease-in-expo: cubic-bezier( 0.950, 0.050, 0.795, 0.035 ) !default;
+$_ease-in-circ: cubic-bezier( 0.600, 0.040, 0.980, 0.335 ) !default;
+$_ease-in-back: cubic-bezier( 0.600, -0.280, 0.735, 0.045 ) !default;
+
+// ease-out
+$_ease-out: cubic-bezier( 0.000, 0.000, 0.580, 1.000 ) !default;
+$_ease-out-quad: cubic-bezier( 0.250, 0.460, 0.450, 0.940 ) !default;
+$_ease-out-cubic: cubic-bezier( 0.215, 0.610, 0.355, 1.000 ) !default;
+$_ease-out-quart: cubic-bezier( 0.165, 0.840, 0.440, 1.000 ) !default;
+$_ease-out-quint: cubic-bezier( 0.230, 1.000, 0.320, 1.000 ) !default;
+$_ease-out-sine: cubic-bezier( 0.390, 0.575, 0.565, 1.000 ) !default;
+$_ease-out-expo: cubic-bezier( 0.190, 1.000, 0.220, 1.000 ) !default;
+$_ease-out-circ: cubic-bezier( 0.075, 0.820, 0.165, 1.000 ) !default;
+$_ease-out-back: cubic-bezier( 0.175, 0.885, 0.320, 1.275 ) !default;
+
+// ease-in-out
+$_ease-in-out: cubic-bezier( 0.420, 0.000, 0.580, 1.000 ) !default;
+$_ease-in-out-quad: cubic-bezier( 0.455, 0.030, 0.515, 0.955 ) !default;
+$_ease-in-out-cubic: cubic-bezier( 0.645, 0.045, 0.355, 1.000 ) !default;
+$_ease-in-out-quart: cubic-bezier( 0.770, 0.000, 0.175, 1.000 ) !default;
+$_ease-in-out-quint: cubic-bezier( 0.860, 0.000, 0.070, 1.000 ) !default;
+$_ease-in-out-sine: cubic-bezier( 0.445, 0.050, 0.550, 0.950 ) !default;
+$_ease-in-out-expo: cubic-bezier( 1.000, 0.000, 0.000, 1.000 ) !default;
+$_ease-in-out-circ: cubic-bezier( 0.785, 0.135, 0.150, 0.860 ) !default;
+$_ease-in-out-back: cubic-bezier( 0.680, -0.550, 0.265, 1.550 ) !default;
