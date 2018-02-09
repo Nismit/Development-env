@@ -1,22 +1,27 @@
 {
   "name": "dev-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Development boilerplate for html",
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
+    "build": "gulp build",
+    "prod": "gulp prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nismit",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-csscomb": "^3.0.8",
-    "gulp-plumber": "^1.2.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0"
   }
 }
