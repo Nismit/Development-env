@@ -25,6 +25,11 @@ body {
   color: $_color-text;
 }
 
+// For IE Hack
+main {
+  display: block;
+}
+
 h1 {
 
 }
