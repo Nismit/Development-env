@@ -9,7 +9,11 @@
 
 //
 // Breakpoints Variables
-// _breakpoints.scss defines variables for media query.
+// Define variables for media query.
+// xs - smartphone
+// sm - Portrait for tablet
+// md - Landscape for tablet / Laptop
+// lg - Large Laptop / Desktop
 //
 
 $_breakpoints-map: (
