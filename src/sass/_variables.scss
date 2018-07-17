@@ -1,0 +1,80 @@
+/*
+
+Variables
+
+*/
+
+//
+// Breakpoints Variables
+// Define variables for media query.
+// xs - Smartphone
+// sm - Portrait for tablet
+// md - Landscape for tablet / Laptop
+// lg - Large Laptop / Desktop
+// xl - Extra Large
+//
+// map-get($_bp-map, 'md')
+
+$_bp-map: (
+  xs: 640,
+  sm: 768,
+  md: 1024,
+  lg: 1200,
+  xl: 1400
+) !default;
+
+// Color
+$_color-ultra-light-black       : #333 !default;
+$_color-light-black             : #333 !default;
+$_color-black                   : #333 !default;
+
+$_color-ultra-light-grey        : #eee !default;
+$_color-light-grey              : #ccc !default;
+$_color-grey                    : #ddd !default;
+
+// Color Collection
+$_color-primary                 : #0000EE !default;
+$_color-secondry                : #551A8B !default;
+
+$_color-base                    : $_color-black;
+
+
+// SNS Color
+$_color-twitter       : #1da1f2 !default;
+$_color-facebook      : #3b5998 !default;
+$_color-github        : #4078c0 !default;
+$_color-linkedin      : #0077b5 !default;
+$_color-pinterest     : #bd081c !default;
+$_color-spotify       : #1db954 !default;
+
+// Font Settings
+$_font-base-size      : 16 !default;
+$_font-family         : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$_font-weight         : 400 !default;
+$_font-line-height    : 1.5 !default;
+
+
+$_h1-font-size        : $_font-base-size *3 *1px;
+$_h1-line-height      : $_font-line-height;
+
+$_h2-font-size        : $_font-base-size *2.2 *1px;
+$_h2-line-height      : $_font-line-height;
+
+$_h3-font-size        : $_font-base-size *1.5 *1px;
+$_h3-line-height      : $_font-line-height;
+
+$_h4-font-size        : $_font-base-size *1.15 *1px;
+$_h4-line-height      : $_font-line-height;
+
+$_h5-font-size        : $_font-base-size;
+$_h5-line-height      : $_font-line-height;
+
+$_h6-font-size        : $_font-base-size*0.8 *1px;
+$_h6-line-height      : $_font-line-height;
+
+// Link Option
+$_link-reverse        : false !default; // or true
+
+
+// Space
+$_space-base          : 1rem;

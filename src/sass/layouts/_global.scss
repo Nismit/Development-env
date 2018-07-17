@@ -1,0 +1,28 @@
+/*
+
+Global Layout
+
+*/
+
+html {
+  font-size: ($_font-base-size * 1px);
+}
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-kerning: normal;
+  font-family: $_font-family;
+  font-weight: $_font-weight;
+  line-height: $_font-line-height;
+  color: $_color-base;
+  background-color: white;
+}
+
+// Section
+.content__section {
+  margin-top: $_space-base;
+  margin-bottom: $_space-base;
+  padding-top: $_space-base;
+  padding-bottom: $_space-base;
+}

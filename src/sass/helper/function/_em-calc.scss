@@ -1,0 +1,16 @@
+//
+// Function em-calc
+// returns **em which converted from px to em
+//
+// # Usage
+//
+// ```
+// .example {
+//   width: em-calc(24px);
+//   // output -> (24px / 16px) * 1em -> 1.5em
+// }
+// ```
+
+@function em-calc($pixel, $base-size: $_font-base-size) {
+  @return ($pixel / $base-size) * 1em;
+}

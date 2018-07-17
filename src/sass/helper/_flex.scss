@@ -1,0 +1,66 @@
+///
+// Mixin font size
+//
+// Generating font setting mixin
+//
+// ```
+// @include font-size(16px, 1.5);
+//
+// // output
+// line-height: 1.5;
+// font-size: 16px;
+// font-size: 1rem;
+// ```
+
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+}
+

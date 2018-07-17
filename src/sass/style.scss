@@ -1,0 +1,31 @@
+/*
+
+All styles are imported in here
+
+*/
+
+// Variables
+@import 'variables';
+
+// Functions
+@import 'helper/function/em-calc';
+@import 'helper/function/strip-unit';
+
+// Helpers
+@import 'helper/mediaquery';
+@import 'helper/font-size';
+@import 'helper/container';
+
+// Base
+@import 'base/reboot';
+@import 'base/utils';
+@import 'base/list';
+@import 'base/typography';
+
+// Layouts
+@import 'layouts/global';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Components
+@import 'components/container';

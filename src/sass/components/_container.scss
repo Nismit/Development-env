@@ -1,0 +1,14 @@
+/*
+
+Container Component
+
+*/
+
+.container {
+  @include container();
+
+  &--fluid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

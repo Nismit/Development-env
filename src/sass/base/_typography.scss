@@ -1,0 +1,78 @@
+/*
+
+Typography
+
+*/
+
+%heading-style {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+h1 {
+  @include font-size($_h1-font-size);
+}
+
+h2 {
+  @include font-size($_h2-font-size);
+}
+
+h3 {
+  @include font-size($_h3-font-size);
+}
+
+h4 {
+  @include font-size($_h4-font-size);
+}
+
+h5 {
+  @include font-size($_h5-font-size);
+}
+
+h6 {
+  @include font-size($_h6-font-size);
+}
+
+// p {
+
+// }
+
+a {
+  @if $_link-reverse {
+    color: $_color-primary;
+    text-decoration: underline;
+
+    &:hover {
+      color: $_color-base;
+      text-decoration: none;
+    }
+  } @else {
+    color: $_color-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $_color-base;
+      text-decoration: underline;
+    }
+  }
+
+  &.link-reverse {
+    @if $_link-reverse {
+      color: $_color-primary;
+      text-decoration: none;
+  
+      &:hover {
+        color: $_color-base;
+        text-decoration: underline;
+      }
+    } @else {
+      color: $_color-primary;
+      text-decoration: underline;
+  
+      &:hover {
+        color: $_color-base;
+        text-decoration: none;
+      }
+    }
+  }
+}

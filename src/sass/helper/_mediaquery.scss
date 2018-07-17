@@ -1,0 +1,34 @@
+///
+// Mixin media query
+//
+// Get media query mixin
+//
+// ```
+// @include breakpoint-min('.example', 'md') {
+//   width: 100px;
+// }
+//
+// // output
+// @media (min-width: 64em) {
+//   .example {
+//     width: 100px;
+//   }
+// }
+// ```
+
+@mixin breakpoint-min($class, $suffix, $bp: $_breakpoints-map) {
+  @media (min-width: em-calc(map-get($bp, $suffix))) {
+    #{$class} {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-max($class, $suffix, $bp: $_breakpoints-map) {
+  @media (max-width: em-calc(map-get($bp, $suffix))) {
+    #{$class} {
+      @content;
+    }
+  }
+}
+
