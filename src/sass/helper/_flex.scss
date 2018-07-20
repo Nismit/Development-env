@@ -12,54 +12,72 @@
 // font-size: 1rem;
 // ```
 
-@mixin flex-row() {
+@mixin make-flex-row() {
+  @include flex();
+  @include flex-row();
+  @include flex-wrap();
+}
+
+@mixin make-flex-col() {
+  @include flex();
+  @include flex-col();
+  @include flex-wrap();
+}
+
+@mixin flex() {
   display: flex;
+
+  &--inline {
+    display: inline-flex;
+  }
+}
+
+@mixin flex-row() {
   flex-direction: row;
-  flex-wrap: wrap;
-
-  &--start {
-    justify-content: flex-start;
-  }
-
-  &--end {
-    justify-content: flex-end;
-  }
-
-  &--center {
-    justify-content: center;
-  }
-
-  &--between {
-    justify-content: space-between;
-  }
-
-  &--around {
-    justify-content: space-around;
+  
+  &--reverse {
+    flex-direction: row-reverse;
   }
 }
 
 @mixin flex-col() {
-  display: flex;
   flex-direction: column;
+  
+  &--reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@mixin flex-wrap() {
   flex-wrap: wrap;
 
-  &--start {
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &--wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@mixin flex-justify() {
+  &--justify-start {
     justify-content: flex-start;
   }
 
-  &--end {
+  &--justify-end {
     justify-content: flex-end;
   }
 
-  &--center {
+  &--justify-center {
     justify-content: center;
   }
 
-  &--between {
+  &--justify-between {
     justify-content: space-between;
   }
 
-  &--around {
+  &--justify-around {
     justify-content: space-around;
   }
 }
