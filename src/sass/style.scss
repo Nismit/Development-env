@@ -15,6 +15,7 @@ All styles are imported in here
 @import 'helper/mediaquery';
 @import 'helper/font-size';
 @import 'helper/container';
+@import 'helper/flex';
 
 // Base
 @import 'base/reboot';
@@ -29,3 +30,4 @@ All styles are imported in here
 
 // Components
 @import 'components/container';
+@import 'components/flex';
