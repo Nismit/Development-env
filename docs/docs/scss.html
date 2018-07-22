@@ -111,7 +111,7 @@
 <h2 id="variables">Variables</h2>
 <ul>
 <li>Dash-cased variable names <code>$local-variable</code></li>
-<li>Global variable names add the prefix <code>_</code> and based in filename in variable directory (e.g. <code>$_filename-variable</code>).</li>
+<li>Global variable names add the prefix <code>_</code> and based in attribute (e.g. <code>$_color-primary</code>).</li>
 <li>Local variable names do not need the prefix but create it in mixin or module directories.</li>
 </ul>
 <h2 id="mixins">Mixins</h2>
@@ -120,7 +120,7 @@ Do not forget DRY and KISS principle.</p>
 <p><strong>File Name</strong>
 <code>_mixin-name.scss</code></p>
 <p><strong>Directory</strong>
-<code>src/sass/mixin/</code></p>
+<code>src/sass/helper/</code></p>
 <h3 id="nested-selectors">Nested Selectors</h3>
 <p>Do not nest selectors more than three levels deep.</p>
 <code class="lang-scss"><pre><span class="hljs-selector-class">.parent</span> {
@@ -133,7 +133,31 @@ Do not forget DRY and KISS principle.</p>
       <span class="hljs-comment">// Modifier</span>
     }
   }
-}</pre></code>
+}</pre></code><h2 id="directory">Directory</h2>
+<code><pre>./src/sass/
+├── _variables<span class="hljs-selector-class">.scss</span>
+├── base
+│   ├── _form<span class="hljs-selector-class">.scss</span>
+│   ├── _list<span class="hljs-selector-class">.scss</span>
+│   ├── _reboot<span class="hljs-selector-class">.scss</span>
+│   ├── _typography<span class="hljs-selector-class">.scss</span>
+│   └── _utils<span class="hljs-selector-class">.scss</span>
+├── components
+│   ├── _container<span class="hljs-selector-class">.scss</span>
+│   └── _flex<span class="hljs-selector-class">.scss</span>
+├── helper
+│   ├── _container<span class="hljs-selector-class">.scss</span>
+│   ├── _flex<span class="hljs-selector-class">.scss</span>
+│   ├── _font-size<span class="hljs-selector-class">.scss</span>
+│   ├── _mediaquery<span class="hljs-selector-class">.scss</span>
+│   └── function
+│       ├── _em-calc<span class="hljs-selector-class">.scss</span>
+│       └── _strip-unit<span class="hljs-selector-class">.scss</span>
+├── layouts
+│   ├── _footer<span class="hljs-selector-class">.scss</span>
+│   ├── _global<span class="hljs-selector-class">.scss</span>
+│   └── _header<span class="hljs-selector-class">.scss</span>
+└── style.scss</pre></code>
     
 
 
@@ -198,7 +222,7 @@ Do not forget DRY and KISS principle.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
