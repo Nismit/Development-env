@@ -1,16 +1,9 @@
 ///
-// Mixin font size
+// Mixin Flexbox
 //
-// Generating font setting mixin
+// Generating flexbox layout
 //
-// ```
-// @include font-size(16px, 1.5);
-//
-// // output
-// line-height: 1.5;
-// font-size: 16px;
-// font-size: 1rem;
-// ```
+
 
 @mixin make-flex-row() {
   @include flex();
@@ -81,4 +74,54 @@
     justify-content: space-around;
   }
 }
+
+@mixin flex-align-items() {
+  &--align-items-start {
+    align-items: flex-start;
+  }
+
+  &--align-items-end {
+    align-items: flex-end;
+  }
+
+  &--align-items-center {
+    align-items: center;
+  }
+
+  &--align-items-base {
+    align-items: baseline;
+  }
+
+  &--align-items-stretch {
+    align-items: stretch;
+  }
+}
+
+@mixin flex-align-content() {
+  &--align-content-start {
+    align-content: flex-start;
+  }
+
+  &--align-content-end {
+    align-content: flex-end;
+  }
+
+  &--align-content-center {
+    align-content: center;
+  }
+
+  &--align-content-between {
+    align-content: space-between;
+  }
+
+  &--align-content-around {
+    align-content: space-around;
+  }
+
+  &--align-content-stretch {
+    align-content: stretch;
+  }
+}
+
+
 
