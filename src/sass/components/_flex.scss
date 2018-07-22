@@ -1,0 +1,11 @@
+/*
+
+Flexbox Component
+
+*/
+
+.flex-row {
+  @include make-flex-row();
+  @include flex-justify();
+  @include flex-align-items();
+}
