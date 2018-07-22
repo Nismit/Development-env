@@ -59,7 +59,7 @@ Use partial Sass files, all partial files should include `style.scss`
 ## Variables
 
 - Dash-cased variable names `$local-variable`
-- Global variable names add the prefix `_` and based in filename in variable directory (e.g. `$_filename-variable`).
+- Global variable names add the prefix `_` and based in attribute (e.g. `$_color-primary`).
 - Local variable names do not need the prefix but create it in mixin or module directories.
 
 ## Mixins
@@ -71,7 +71,7 @@ Do not forget DRY and KISS principle.
 `_mixin-name.scss`
 
 **Directory**
-`src/sass/mixin/`
+`src/sass/helper/`
 
 ### Nested Selectors
 
@@ -89,4 +89,35 @@ Do not nest selectors more than three levels deep.
     }
   }
 }
+```
+
+## Directory
+
+
+
+```
+./src/sass/
+├── _variables.scss
+├── base
+│   ├── _form.scss
+│   ├── _list.scss
+│   ├── _reboot.scss
+│   ├── _typography.scss
+│   └── _utils.scss
+├── components
+│   ├── _container.scss
+│   └── _flex.scss
+├── helper
+│   ├── _container.scss
+│   ├── _flex.scss
+│   ├── _font-size.scss
+│   ├── _mediaquery.scss
+│   └── function
+│       ├── _em-calc.scss
+│       └── _strip-unit.scss
+├── layouts
+│   ├── _footer.scss
+│   ├── _global.scss
+│   └── _header.scss
+└── style.scss
 ```
