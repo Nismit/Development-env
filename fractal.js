@@ -18,3 +18,6 @@ fractal.docs.set('path', __dirname + '/src/docs/pages');
 
 /* Build Fractal where the published documentation */
 fractal.web.set('builder.dest', __dirname + '/docs');
+
+/* Set Actual Stylesheet Path in Preview */
+fractal.web.set('static.path', __dirname + '/dist');
